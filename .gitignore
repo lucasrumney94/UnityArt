@@ -7,6 +7,7 @@
 [Oo]bj/
 [Tt]emp/
 [Uu]nityGenerated/
+[Bb]uild/
 # file on crash reports
 sysinfo.txt
 # Unity3D generated meta files
