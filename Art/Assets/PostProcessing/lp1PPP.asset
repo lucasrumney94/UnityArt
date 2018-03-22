@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a3bdb2cd68f901469e7cc149151eb49, type: 3}
-  m_Name: FlightPPP
+  m_Name: lp1PPP
   m_EditorClassIdentifier: 
   debugViews:
     m_Enabled: 1
@@ -25,7 +25,7 @@ MonoBehaviour:
         motionVectorsResolution: 24
         motionVectorsAmplitude: 64
   fog:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       excludeSkybox: 1
   antialiasing:
@@ -33,16 +33,16 @@ MonoBehaviour:
     m_Settings:
       method: 0
       fxaaSettings:
-        preset: 4
+        preset: 3
       taaSettings:
-        jitterSpread: 0.923
-        sharpen: 0.2
-        stationaryBlending: 0.1
-        motionBlending: 0.052
+        jitterSpread: 0.75
+        sharpen: 0.3
+        stationaryBlending: 0.95
+        motionBlending: 0.85
   ambientOcclusion:
     m_Enabled: 0
     m_Settings:
-      intensity: 1.65
+      intensity: 1
       radius: 0.3
       sampleCount: 10
       downsampling: 1
@@ -71,17 +71,17 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 1
     m_Settings:
-      focusDistance: 5.98
-      aperture: 15.6
-      focalLength: 125
+      focusDistance: 10
+      aperture: 5.6
+      focalLength: 50
       useCameraFov: 0
-      kernelSize: 0
+      kernelSize: 1
   motionBlur:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       shutterAngle: 270
-      sampleCount: 32
-      frameBlending: 0.293
+      sampleCount: 10
+      frameBlending: 0
   eyeAdaptation:
     m_Enabled: 0
     m_Settings:
@@ -91,23 +91,23 @@ MonoBehaviour:
       maxLuminance: 1
       keyValue: 0.25
       dynamicKeyValue: 1
-      adaptationType: 1
+      adaptationType: 0
       speedUp: 2
       speedDown: 1
       logMin: -8
-      logMax: 7
+      logMax: 4
   bloom:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       bloom:
-        intensity: 3.76
-        threshold: 1.9
-        softKnee: 0.9
-        radius: 3.06
+        intensity: 0.5
+        threshold: 1.1
+        softKnee: 0.5
+        radius: 4
         antiFlicker: 0
       lensDirt:
         texture: {fileID: 0}
-        intensity: 0
+        intensity: 3
   colorGrading:
     m_Enabled: 0
     m_Settings:
@@ -289,23 +289,23 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       colored: 0
-      intensity: 0.227
+      intensity: 0.462
       size: 0.3
-      luminanceContribution: 0.543
+      luminanceContribution: 0
   vignette:
     m_Enabled: 1
     m_Settings:
       mode: 0
-      color: {r: 1, g: 0, b: 0, a: 1}
+      color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.529
-      smoothness: 0.2
+      intensity: 0.257
+      smoothness: 1
       roundness: 1
       mask: {fileID: 0}
       opacity: 1
-      rounded: 1
+      rounded: 0
   dithering:
-    m_Enabled: 0
+    m_Enabled: 1
   monitors:
     currentMonitorID: 0
     refreshOnPlay: 0

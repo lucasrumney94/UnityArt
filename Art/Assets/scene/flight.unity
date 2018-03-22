@@ -379,7 +379,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1993143711
+  randomSeed: -533725278
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -822,7 +822,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 2
+    type: 0
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -3686,6 +3686,34 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1201782518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1201782519}
+  m_Layer: 0
+  m_Name: orbit target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1201782519
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1201782518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1616066556
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,6 +3824,7 @@ GameObject:
   - component: {fileID: 1654387252}
   - component: {fileID: 1654387251}
   - component: {fileID: 1654387250}
+  - component: {fileID: 1654387254}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3865,12 +3894,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1654387249}
   m_LocalRotation: {x: -0.28973895, y: -0.16912402, z: 0.052095883, w: -0.9406032}
-  m_LocalPosition: {x: -3.434361, y: 7.016077, z: -6.8113756}
+  m_LocalPosition: {x: -3.434361, y: 6.7, z: -6.8113756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1654387254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1654387249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbc0dda6870e2d41a35a0144d30038d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1201782518}
+  radius: 9
+  speed: 1
 --- !u!1 &1689813297
 GameObject:
   m_ObjectHideFlags: 0
